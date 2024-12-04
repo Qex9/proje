@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Düzenleme</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <!-- Sol kısım: Logo ve Linkler -->
+        <div class="navbar-left">
+            <a href="index.html" class="logo">PLATFORM</a> <!-- Logoya tıklama özelliği eklendi -->
+            <nav class="nav-links">
+                <a href="#">ANASAYFA</a>
+                <div class="dropdown">
+                    <a href="#" class="dropdown-toggle">KATEGORİLER</a>
+                    <div class="dropdown-menu">
+                        <a href="#">Kategori 1</a>
+                        <a href="#">Kategori 2</a>
+                        <a href="#">Kategori 3</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Sağdaki ikonlar -->
+        <div class="icons">
+            <a href="#" class="icon search-icon">🔍</a>
+            <a href="#" class="icon user-icon">👤</a>
+            <a href="#" class="icon cart-icon">
+                🛒 <span class="cart-count">0</span>
+            </a>
+        </div>
+    </header>

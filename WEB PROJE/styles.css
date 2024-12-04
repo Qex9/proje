@@ -1,0 +1,90 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 100px; /* Navbar'ın yan kenar boşlukları */
+    background-color: hsl(169, 19%, 84%); /* Pastel yeşil renk */
+    height: 60px; /* Navbar yüksekliği */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-family: "Outfit", sans-serif;
+    font-size: 32px;
+    text-decoration: none;
+    color: black;
+    margin-right: 30px; /* Logonun linklerden ayrılması için boşluk */
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px; /* Linkler arasındaki boşluk */
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center; /* Logo ve linkleri hizalamak için */
+    gap: 30px; /* Logo ile linkler arasında boşluk */
+}
+
+.nav-links a {
+    font-family: "Outfit", sans-serif;
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #1a1a1a;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.icon {
+    font-size: 20px;
+    text-decoration: none;
+    color: #1a1a1a;
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background: #000;
+    color: #fff;
+    border-radius: 50%;
+    padding: 2px 5px;
+    font-size: 12px;
+}
